@@ -109,3 +109,16 @@
             transform: scale(1);    
         }
     }
+
+    .form-hide {
+        animation: down 500ms forwards;
+    }
+
+    @keyframes down {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(100vh);
+        }
+    }

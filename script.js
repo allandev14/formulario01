@@ -1,0 +1,19 @@
+const btnLogin = document.querySelector(".btn-login");
+const form = document.querySelector("form");
+
+btnLogin.anddEventListener("click", event => {
+        event.preventDefault();
+        form.classList.add("form-hide");   
+});
+
+form.addEventListener("animationstart", event => {
+   if (event.animationName =="down") {
+       document.querySelector("body").style.overflow = "hidden";
+   } 
+});
+
+form.addEventListener("animationend", () => {
+    if (Event.animationName == "down")
+    form.style.display = "none";
+    document.querySelector("dody").style.overflow = "none";
+});
